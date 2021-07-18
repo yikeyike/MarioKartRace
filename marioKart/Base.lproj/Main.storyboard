@@ -1,24 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="marioKart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ik5-3R-z3s">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kart_0" translatesAutoresizingMaskIntoConstraints="NO" id="aWd-KM-ugW" userLabel="kart_0">
+                                <rect key="frame" x="20" y="244" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uWG-Sy-Y6r"/>
+                                    <constraint firstAttribute="width" constant="50" id="y5H-4f-B71"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wjt-nh-VxJ" appends="YES" id="4VD-PP-5EC"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="sJL-Bt-LOe">
+                                <rect key="frame" x="20" y="344" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="HQ3-mk-FPA"/>
+                                    <constraint firstAttribute="height" constant="50" id="wtU-gE-vYT"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Iin-YW-Hwv" appends="YES" id="a1j-zW-JDc"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kart_2" translatesAutoresizingMaskIntoConstraints="NO" id="NH1-Tj-DVY">
+                                <rect key="frame" x="20" y="444" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9nx-Bt-xOU"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ko2-gm-Ipc"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PF7-hg-1Bt" appends="YES" id="MTn-Q7-lcA"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kart_3" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-CO-Zbk">
+                                <rect key="frame" x="20" y="544" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3vT-2k-KHs"/>
+                                    <constraint firstAttribute="height" constant="50" id="dyy-uI-hVa"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8B6-MH-GJx" appends="YES" id="SjH-p3-BAr"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kart_4" translatesAutoresizingMaskIntoConstraints="NO" id="NqI-nK-33p">
+                                <rect key="frame" x="20" y="644" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="834-Oc-EeO"/>
+                                    <constraint firstAttribute="width" constant="50" id="fsV-ag-aAm"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dpy-M5-PjM" appends="YES" id="pvw-6j-rdZ"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aWd-KM-ugW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1BE-y4-Hr9"/>
+                            <constraint firstItem="BPm-CO-Zbk" firstAttribute="top" secondItem="NH1-Tj-DVY" secondAttribute="bottom" constant="50" id="2RJ-vR-7Wt"/>
+                            <constraint firstItem="NH1-Tj-DVY" firstAttribute="top" secondItem="sJL-Bt-LOe" secondAttribute="bottom" constant="50" id="520-hz-RGz"/>
+                            <constraint firstItem="aWd-KM-ugW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="GW8-qC-Mid"/>
+                            <constraint firstItem="sJL-Bt-LOe" firstAttribute="top" secondItem="aWd-KM-ugW" secondAttribute="bottom" constant="50" id="H9d-h1-Hqp"/>
+                            <constraint firstItem="sJL-Bt-LOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JxF-RX-Ugn"/>
+                            <constraint firstItem="NH1-Tj-DVY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="V94-1x-AIr"/>
+                            <constraint firstItem="NqI-nK-33p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wkx-FX-CWU"/>
+                            <constraint firstItem="BPm-CO-Zbk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aoP-6T-eNw"/>
+                            <constraint firstItem="NqI-nK-33p" firstAttribute="top" secondItem="BPm-CO-Zbk" secondAttribute="bottom" constant="50" id="eQ4-7j-7It"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="wjt-nh-VxJ">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="hLC-fr-5ee"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Iin-YW-Hwv">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="Olf-Os-W5i"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="PF7-hg-1Bt">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="27f-cg-rga"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="8B6-MH-GJx">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="ls2-nQ-o2p"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="dpy-M5-PjM">
+                    <connections>
+                        <action selector="didPanKartView:" destination="BYZ-38-t0r" id="nFg-b2-Gjh"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="320" height="568"/>
+        <image name="kart_0" width="340" height="340"/>
+        <image name="kart_1" width="340" height="340"/>
+        <image name="kart_2" width="340" height="340"/>
+        <image name="kart_3" width="340" height="340"/>
+        <image name="kart_4" width="340" height="340"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
